@@ -1,4 +1,4 @@
-# livecoding-base-set
+# livecoding setup
 
 ## Instrucciones
 
