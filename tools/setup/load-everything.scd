@@ -1,8 +1,6 @@
 
 
 i=INSTRUMENT();
-i.kill;
-i=INSTRUMENT();
 
 i.tempo = 88;
 
