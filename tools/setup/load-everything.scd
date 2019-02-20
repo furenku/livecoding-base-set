@@ -1,6 +1,8 @@
 
 
 i=INSTRUMENT();
+i.kill;
+i=INSTRUMENT();
 
 i.tempo = 88;
 
@@ -32,8 +34,8 @@ p.quant = 4;
 ~out.play;
 
 
-//(thisProcess.nowExecutingPath.dirname ++ "/midi/midi-setup.scd").load;
+// (thisProcess.nowExecutingPath.dirname ++ "/midi/midi-setup.scd").load;
 
-i.synths = i.loadSynths(Platform.userExtensionDir++'/INSTRUMENT/INSTRUMENT/Sounds/SynthDefs/*');
+i.synths = i.loadSynths(Platform.userExtensionDir++'/INSTRUMENT/SuperCollider/Classes/INSTRUMENT/Sounds/SynthDefs/*');
 
 i.play;
