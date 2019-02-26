@@ -19,8 +19,11 @@
 
 		3.wait;
 
-		inMidiDevicesNames = ["MIDI Mix","MPK Mini Mk II"];
-		outMidiDevicesNames = ["MPK Mini Mk II"];
+		inMidiDevicesNames = (thisProcess.nowExecutingPath.dirname ++ "/../../../midi/devices-in.scd").load;
+		inMidiDevicesNames.postln;
+
+		outMidiDevicesNames = (thisProcess.nowExecutingPath.dirname ++ "/../../../midi/devices-out.scd").load;
+		outMidiDevicesNames.postln;
 
 		midi.addDevices( inMidiDevicesNames, specs );
 

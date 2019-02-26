@@ -51,8 +51,9 @@ i.unmap(m.mpk_mk2.piano,i[\bassPoly],\note);
 
 (
 i[\chaosPerc]=INSTRUMENT(\chaosPerc);
-i[\chaosPerc].octave=2;
+i[\chaosPerc].octave=0;
 i.map(m.mpk_mk2.pads,i[\chaosPerc],\note);
 i.map(m.mpk_mk2.knob1,i[\chaosPerc],\rel);
 i.map(m.mpk_mk2.knob2,i[\chaosPerc],\att,[0.01,3]);
+i.map(m.mpk_mk2.knob4,i[\chaosPerc],\amp,[0,2.5]);
 )
